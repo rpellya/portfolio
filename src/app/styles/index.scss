@@ -1,0 +1,8 @@
+@use "variables/global.module.scss";
+@use "themes/light.module.scss" as *;
+
+
+body {
+    font: var(--font-m);
+    color: var(--accent-color);
+}
