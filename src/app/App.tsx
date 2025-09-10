@@ -1,5 +1,7 @@
 import { Sidebar } from 'components/Sidebar';
 import { useTheme } from './providers/ThemeProvider';
+import { PreviewContent } from 'components/PreviewContent';
+import { ResumeInfo } from 'components/ResumeInfo';
 
 const App: React.FC = () => {
     const { theme } = useTheme();
@@ -8,6 +10,8 @@ const App: React.FC = () => {
     return (
         <div className="App">
             <Sidebar />
+            <PreviewContent />
+            <ResumeInfo />
         </div>
     );
 };

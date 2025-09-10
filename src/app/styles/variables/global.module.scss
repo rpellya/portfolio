@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
 
 :root {
     --font-family-main: "Raleway", sans-serif;
@@ -12,15 +12,12 @@
     --font-line-xl: 40px;
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
-    // Sizes
     --navbar-height: 50px;
     --sidebar-width: 300px;
     --sidebar-width-collapsed: 80px;
 
-    // z - indexes
     --modal-z-index: 10;
 
-    // Colors
     --overlay-color: rgb(0 0 0 / 30%);
     --red-light: #f00;
     --red-dark: #9b0000;

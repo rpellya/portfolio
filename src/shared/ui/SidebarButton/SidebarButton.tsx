@@ -9,7 +9,7 @@ interface SidebarButtonProps {
 export const SidebarButton: React.FC<SidebarButtonProps> = ({ icon, text }) => {
     return (
         <div className={styles.sidebarButton}>
-            <>{icon}</>
+            {icon}
             <span>{text}</span>
         </div>
     );
