@@ -1,0 +1,11 @@
+.ProfileInfoCard {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    .textContainer {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+}
