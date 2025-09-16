@@ -1,0 +1,89 @@
+.SwitchBurger {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    right: 0;
+    top: 0;
+
+    display: none;
+    position: fixed;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+
+    cursor: pointer;
+    z-index: 100;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+    .burgerLines {
+        width: 24px;
+        height: 24px;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        transition: transform 0.5s ease;
+        transform: translateX(5px);
+    }
+
+    .line {
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: white;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    .line1 {
+        top: 3px;
+        transform-origin: right center;
+        transform: rotate(-45deg) scaleX(0.7) translate(-8px, -10px);
+    }
+
+    .line2 {
+        top: 12px;
+        opacity: 0;
+        transform: translateY(-50%) scaleX(0);
+    }
+
+    .line3 {
+        top: 18px;
+        transform-origin: left center;
+        transform: rotate(45deg) scaleX(0.7) translate(-7px, -6px);
+    }
+
+    &.closed {
+        .burgerLines {
+            transform: none;
+        }
+
+        .line1 {
+            transform: none;
+            background: white;
+        }
+
+        .line2 {
+            transform: translateY(-50%);
+            transform-origin: center;
+            opacity: 1;
+        }
+
+        .line3 {
+            transform: none;
+            background: white;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .SwitchBurger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
