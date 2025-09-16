@@ -8,7 +8,7 @@ import { SwitchBurger } from './SwitchBurger/SwitchBurger';
 import { useCallback, useEffect, useState } from 'react';
 import { classNames } from 'app/lib/classNames';
 import { useDebounce } from 'shared/hooks/useDebounse/useDebounse';
-import styles from './Sidebar.module.scss';
+import cls from './Sidebar.module.scss';
 
 export const Sidebar = () => {
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -44,22 +44,22 @@ export const Sidebar = () => {
     return (
         <>
             <div
-                className={classNames(styles.sideBarContent, {
-                    [styles.closed]: closeSidebar,
+                className={classNames(cls.sideBarContent, {
+                    [cls.closed]: closeSidebar,
                 })}
             >
-                <header className={styles.infoContainer}>
+                <header className={cls.infoContainer}>
                     <div>
                         <img
-                            className={styles.avatar}
+                            className={cls.avatar}
                             src="https://avatars.githubusercontent.com/u/103450915?v=4"
                         />
                     </div>
-                    <h1 className={styles.titleName}>Pellya Roman</h1>
+                    <h1 className={cls.titleName}>Pellya Roman</h1>
 
-                    <div className={styles.socials}>
+                    <div className={cls.socials}>
                         <AppLink
-                            className={styles.appLink}
+                            className={cls.appLink}
                             theme="secondary"
                             href="https://github.com/rpellya"
                             target="_blank"
@@ -67,7 +67,7 @@ export const Sidebar = () => {
                             <GithubIcon />
                         </AppLink>
                         <AppLink
-                            className={styles.appLink}
+                            className={cls.appLink}
                             theme="secondary"
                             href="https://t.me/rpellya"
                             target="_blank"
@@ -75,7 +75,7 @@ export const Sidebar = () => {
                             <TelegramIcon />
                         </AppLink>
                         <AppLink
-                            className={styles.appLink}
+                            className={cls.appLink}
                             theme="secondary"
                             href="https://www.youtube.com/@pellyait"
                             target="_blank"
@@ -85,7 +85,7 @@ export const Sidebar = () => {
                     </div>
                 </header>
 
-                <menu className={styles.menu}>
+                <menu className={cls.menu}>
                     {sidevarItems.map((item) => (
                         <SidebarButton
                             icon={item.icon}
@@ -95,15 +95,15 @@ export const Sidebar = () => {
                     ))}
                 </menu>
 
-                <footer className={styles.license}>
+                <footer className={cls.license}>
                     <div>
                         <span>© Copyright</span>
-                        <span className={styles.name}>Pellya</span>
+                        <span className={cls.name}>Pellya</span>
                     </div>
                     <div>
                         <span>Designed by</span>
                         <a
-                            className={styles.link}
+                            className={cls.link}
                             href="https://github.com/rpellya"
                             target="_blank"
                         >

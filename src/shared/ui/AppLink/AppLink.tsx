@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { classNames } from 'app/lib/classNames';
-import styles from './AppLink.module.scss';
 import type { AppLinkTheme } from './types';
+import cls from './AppLink.module.scss';
 
 interface AppLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     className?: string;
@@ -22,10 +22,7 @@ export const AppLink = memo(
             <a
                 {...props}
                 href={href}
-                className={classNames(styles.AppLink, {}, [
-                    className,
-                    styles[theme],
-                ])}
+                className={classNames(cls.AppLink, {}, [className, cls[theme]])}
             >
                 {children}
             </a>

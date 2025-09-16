@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import styles from './SidebarButton.module.scss';
+import cls from './SidebarButton.module.scss';
 
 interface SidebarButtonProps {
     icon?: ReactNode;
@@ -8,7 +8,7 @@ interface SidebarButtonProps {
 
 export const SidebarButton: React.FC<SidebarButtonProps> = ({ icon, text }) => {
     return (
-        <div className={styles.sidebarButton}>
+        <div className={cls.sidebarButton}>
             {icon}
             <span>{text}</span>
         </div>
