@@ -3,6 +3,7 @@ import { ReactComponent as HomeIcon } from 'shared/assets/icons/home.svg';
 import { ReactComponent as MailIcon } from 'shared/assets/icons/mail.svg';
 import { ReactComponent as ResumeIcon } from 'shared/assets/icons/resume.svg';
 import { ReactComponent as PersonIcon } from 'shared/assets/icons/personOnMac.svg';
+import { ReactComponent as SkillsIcon } from 'shared/assets/icons/skills.svg';
 
 interface SidebarItems {
     text: string;
@@ -20,6 +21,11 @@ export const sidevarItems: SidebarItems[] = [
         text: 'About',
         icon: <PersonIcon />,
         link: 'about',
+    },
+    {
+        text: 'Skills',
+        icon: <SkillsIcon />,
+        link: 'skills',
     },
     {
         text: 'Resume',
