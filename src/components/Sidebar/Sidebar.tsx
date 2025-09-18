@@ -47,8 +47,12 @@ export const Sidebar = () => {
             document
                 .getElementById(link)
                 ?.scrollIntoView({ behavior: 'smooth' });
+
+            if (windowWidth < 1200) {
+                setCloseSidebar(true);
+            }
         },
-        [],
+        [windowWidth],
     );
 
     return (
@@ -115,13 +119,13 @@ export const Sidebar = () => {
                     </div>
                     <div>
                         <span>Designed by</span>
-                        <a
+                        <AppLink
                             className={cls.link}
                             href="https://github.com/rpellya"
                             target="_blank"
                         >
                             Pellya
-                        </a>
+                        </AppLink>
                     </div>
                 </footer>
             </div>

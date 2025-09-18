@@ -15,7 +15,7 @@ export const SidebarButton: React.FC<SidebarButtonProps> = ({
 }) => {
     return (
         <div className={cls.sidebarButton}>
-            <AppLink theme="secondary" onClick={onClick}>
+            <AppLink theme="secondary" onClick={onClick} className={cls.link}>
                 <div>{icon}</div>
                 <span>{text}</span>
             </AppLink>

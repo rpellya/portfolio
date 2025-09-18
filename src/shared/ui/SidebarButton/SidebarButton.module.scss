@@ -1,10 +1,16 @@
 .sidebarButton {
     display: flex;
     align-items: center;
-    column-gap: 8px;
+
     color: var(--inverted-main-color);
     cursor: pointer;
     letter-spacing: 0.03em;
+
+    a.link {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
 
     &:hover {
         opacity: 0.8;
