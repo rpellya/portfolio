@@ -15,7 +15,107 @@ export const ProfileOverview: React.FC<ProfileOverviewProps> = ({
             <Layout title={'About'}>
                 <About />
             </Layout>
+            <Layout title={'Skills'}>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+            </Layout>
             <Layout title={'Resume'}>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+                <div>
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, quod. Quisquam, quod.
+                </div>
+            </Layout>
+            <Layout title={'Contact'}>
                 <div>
                     lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam, quod. Quisquam, quod.

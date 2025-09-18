@@ -15,7 +15,7 @@ export const sidevarItems: SidebarItems[] = [
     {
         text: 'Home',
         icon: <HomeIcon />,
-        link: '/',
+        link: 'home',
     },
     {
         text: 'About',

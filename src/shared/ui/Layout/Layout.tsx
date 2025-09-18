@@ -13,7 +13,10 @@ export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
     className,
 }) => {
     return (
-        <div className={classNames(cls.Layout, {}, [className])}>
+        <div
+            className={classNames(cls.Layout, {}, [className])}
+            id={title.toLocaleLowerCase()}
+        >
             <h2 className={cls.title}>{title}</h2>
             {children}
         </div>

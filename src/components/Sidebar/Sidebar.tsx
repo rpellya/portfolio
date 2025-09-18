@@ -41,6 +41,16 @@ export const Sidebar = () => {
         setCloseSidebar(!closeSidebar);
     }, [closeSidebar]);
 
+    const handleClickLink = useCallback(
+        (event: React.MouseEvent, link: string) => {
+            event.preventDefault();
+            document
+                .getElementById(link)
+                ?.scrollIntoView({ behavior: 'smooth' });
+        },
+        [],
+    );
+
     return (
         <>
             <div
@@ -88,6 +98,9 @@ export const Sidebar = () => {
                 <menu className={cls.menu}>
                     {sidevarItems.map((item) => (
                         <SidebarButton
+                            onClick={(e: React.MouseEvent) =>
+                                handleClickLink(e, item.link)
+                            }
                             icon={item.icon}
                             text={item.text}
                             key={item.text}
