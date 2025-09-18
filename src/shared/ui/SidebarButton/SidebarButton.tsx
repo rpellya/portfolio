@@ -1,16 +1,24 @@
-import type { ReactNode } from 'react';
-import styles from './SidebarButton.module.scss';
+import { type ReactNode } from 'react';
+import { AppLink } from '../AppLink/AppLink';
+import cls from './SidebarButton.module.scss';
 
 interface SidebarButtonProps {
     icon?: ReactNode;
     text: string;
+    onClick: (e: React.MouseEvent) => void;
 }
 
-export const SidebarButton: React.FC<SidebarButtonProps> = ({ icon, text }) => {
+export const SidebarButton: React.FC<SidebarButtonProps> = ({
+    icon,
+    text,
+    onClick,
+}) => {
     return (
-        <div className={styles.sidebarButton}>
-            {icon}
-            <span>{text}</span>
+        <div className={cls.sidebarButton}>
+            <AppLink theme="secondary" onClick={onClick} className={cls.link}>
+                <div>{icon}</div>
+                <span>{text}</span>
+            </AppLink>
         </div>
     );
 };

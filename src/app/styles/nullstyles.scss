@@ -7,18 +7,6 @@
     box-sizing: border-box;
 }
 
-* {
-    ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 5px;
-        background-color: var(--main-color);
-    }
-}
-
 /* Убираем внутренние отступы */
 ul,
 ol {
@@ -41,6 +29,10 @@ blockquote,
 dl,
 dd {
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */

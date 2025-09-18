@@ -1,0 +1,30 @@
+.Layout {
+    padding: 60px 10px;
+    margin: 0 60px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+
+    &::after {
+        content: "";
+        display: block;
+        bottom: -12px;
+        left: 0px;
+        position: absolute;
+        background-color: var(--primary-color);
+
+        height: 3px;
+        width: 52px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .Layout {
+        margin: 12px;
+        padding: 20px 0px;
+    }
+}
