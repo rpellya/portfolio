@@ -1,6 +1,7 @@
 import { classNames } from 'app/lib/classNames';
 import cls from './About.module.scss';
 import { ProfileInfoCard } from './ProfileInfoCard/ProfileInfoCard';
+import { profileInfo } from './mock/profileInfo';
 
 interface AboutProps {
     className?: string;
@@ -30,15 +31,9 @@ export const About: React.FC<AboutProps> = ({ className }) => {
                         applications.
                     </span>
                     <div>
-                        <ProfileInfoCard label="Birthday" value="11th May" />
-                        <ProfileInfoCard
-                            label="Email"
-                            value="rpellya@gmail.com"
-                        />
-                        <ProfileInfoCard
-                            label="City"
-                            value="St. Petersburg, Russia"
-                        />
+                        {profileInfo.map((i) => (
+                            <ProfileInfoCard label={i.label} value={i.value} />
+                        ))}
                     </div>
                 </div>
             </div>

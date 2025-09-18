@@ -1,1 +1,0 @@
-export { ResumeInfo } from './ResumeInfo';

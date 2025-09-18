@@ -1,6 +1,6 @@
-import styles from './PreviewContent.module.scss';
+import styles from './BackgroundImage.module.scss';
 
-export const PreviewContent = () => {
+export const BackgroundImage = () => {
     return (
         <section className={styles.preview}>
             <img

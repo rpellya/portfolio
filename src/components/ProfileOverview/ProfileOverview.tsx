@@ -1,15 +1,17 @@
 import { classNames } from 'app/lib/classNames';
-import styles from './ResumeInfo.module.scss';
+import styles from './ProfileOverview.module.scss';
 import { Layout } from 'shared/ui/Layout';
 import { About } from 'components/About';
 
-interface ResumeInfoProps {
+interface ProfileOverviewProps {
     className?: string;
 }
 
-export const ResumeInfo = ({ className }: ResumeInfoProps) => {
+export const ProfileOverview: React.FC<ProfileOverviewProps> = ({
+    className,
+}) => {
     return (
-        <div className={classNames(styles.ResumeInfo, {}, [className])}>
+        <div className={classNames(styles.ProfileOverview, {}, [className])}>
             <Layout title={'About'}>
                 <About />
             </Layout>
