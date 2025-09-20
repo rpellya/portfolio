@@ -69,7 +69,7 @@ export const Sidebar = () => {
                             src="https://avatars.githubusercontent.com/u/103450915?v=4"
                         />
                     </div>
-                    <h1 className={cls.titleName}>Pellya Roman</h1>
+                    <h2 className={cls.titleName}>Pellya Roman</h2>
 
                     <div className={cls.socials}>
                         <AppLink
