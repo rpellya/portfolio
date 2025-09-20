@@ -1,7 +1,7 @@
 import { Sidebar } from 'components/Sidebar';
-import { useTheme } from './providers/ThemeProvider';
-import { BackgroundImage } from 'components/BackgroundImage';
+import { Home } from 'components/Home';
 import { ProfileOverview } from 'components/ProfileOverview';
+import { useTheme } from './providers/ThemeProvider';
 
 const App: React.FC = () => {
     const { theme } = useTheme();
@@ -9,8 +9,8 @@ const App: React.FC = () => {
 
     return (
         <div className="App">
+            <Home />
             <Sidebar />
-            <BackgroundImage />
             <ProfileOverview />
         </div>
     );
