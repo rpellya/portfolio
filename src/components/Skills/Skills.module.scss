@@ -1,0 +1,11 @@
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+    .skillsContainer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}

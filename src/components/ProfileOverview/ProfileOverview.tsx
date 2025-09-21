@@ -1,7 +1,8 @@
 import { classNames } from 'app/lib/classNames';
-import styles from './ProfileOverview.module.scss';
 import { Layout } from 'shared/ui/Layout';
 import { About } from 'components/About';
+import { Skills } from 'components/Skills';
+import cls from './ProfileOverview.module.scss';
 
 interface ProfileOverviewProps {
     className?: string;
@@ -11,59 +12,12 @@ export const ProfileOverview: React.FC<ProfileOverviewProps> = ({
     className,
 }) => {
     return (
-        <div className={classNames(styles.ProfileOverview, {}, [className])}>
+        <div className={classNames(cls.ProfileOverview, {}, [className])}>
             <Layout title={'About'}>
                 <About />
             </Layout>
-            <Layout title={'Skills'}>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
+            <Layout title={'Skills'} className={cls.greenBackground}>
+                <Skills />
             </Layout>
             <Layout title={'Resume'}>
                 <div>
@@ -115,7 +69,7 @@ export const ProfileOverview: React.FC<ProfileOverviewProps> = ({
                     Quisquam, quod. Quisquam, quod.
                 </div>
             </Layout>
-            <Layout title={'Contact'}>
+            <Layout title={'Contact'} className={cls.greenBackground}>
                 <div>
                     lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam, quod. Quisquam, quod.
