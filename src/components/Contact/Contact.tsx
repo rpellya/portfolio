@@ -17,6 +17,7 @@ export const Contact: React.FC = () => {
                             icon={i.icon}
                             title={i.label}
                             value={i.value}
+                            link={i.link}
                         />
                     ))}
                 </div>
