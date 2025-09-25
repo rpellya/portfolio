@@ -1,0 +1,69 @@
+.ResumeItemCard {
+    .title {
+        font-size: 26px;
+        margin: 20px 0;
+        color: var(--accent-color);
+    }
+}
+
+.itemCardContainer {
+    padding: 0 0 20px 20px;
+    border-left: 2px solid var(--accent-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid var(--accent-color);
+    }
+
+    .subTitle {
+        font-size: 18px;
+        color: var(--accent-color);
+    }
+}
+
+.years {
+    width: 130px;
+    padding: 4px 8px;
+    background-color: rgba(148, 197, 163, 0.3647058824);
+    text-align: center;
+    border-radius: 2px;
+}
+
+.geoPlace {
+    font-style: italic;
+}
+
+.labelsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    .label {
+        position: relative;
+        margin-left: 18px;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 10px;
+            left: -16px;
+            border-radius: 50px;
+            background-color: var(--accent-color);
+        }
+    }
+}
