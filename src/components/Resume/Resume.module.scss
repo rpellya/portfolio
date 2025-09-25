@@ -1,0 +1,33 @@
+.link {
+    margin-left: 4px;
+
+    &:hover {
+        color: var(--primary-color);
+        opacity: 0.5;
+    }
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // левая колонка и правая
+    grid-template-rows: auto 1fr; // первая строка по контенту, вторая — заполняющая
+    grid-template-areas:
+        "summary experience"
+        "education experience";
+    gap: 20px;
+
+    .experience {
+        grid-area: experience;
+    }
+}
+
+@media (max-width: 800px) {
+    .items {
+        grid-template-columns: 1fr; // только одна колонка
+        grid-template-rows: auto;
+        grid-template-areas:
+            "summary"
+            "experience"
+            "education"; // каждый блок идёт друг за другом
+    }
+}

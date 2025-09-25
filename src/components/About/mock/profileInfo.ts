@@ -6,7 +6,7 @@ interface ProfileInfo {
 export const profileInfo: ProfileInfo[] = [
     {
         label: 'Birthday',
-        value: '11.05.2004',
+        value: '11th May',
     },
     {
         label: 'Email',

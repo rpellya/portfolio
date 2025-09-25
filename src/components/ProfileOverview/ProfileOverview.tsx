@@ -2,6 +2,7 @@ import { classNames } from 'app/lib/classNames';
 import { Layout } from 'shared/ui/Layout';
 import { About } from 'components/About';
 import { Skills } from 'components/Skills';
+import { Resume } from 'components/Resume';
 import cls from './ProfileOverview.module.scss';
 
 interface ProfileOverviewProps {
@@ -20,54 +21,7 @@ export const ProfileOverview: React.FC<ProfileOverviewProps> = ({
                 <Skills />
             </Layout>
             <Layout title={'Resume'}>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
-                <div>
-                    lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quisquam, quod. Quisquam, quod.
-                </div>
+                <Resume />
             </Layout>
             <Layout title={'Contact'} className={cls.greenBackground}>
                 <div>
