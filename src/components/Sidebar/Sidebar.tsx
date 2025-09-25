@@ -75,7 +75,7 @@ export const Sidebar = () => {
                         <AppLink
                             className={cls.appLink}
                             theme="secondary"
-                            href="https://github.com/rpellya"
+                            to="https://github.com/rpellya"
                             target="_blank"
                         >
                             <GithubIcon />
@@ -83,7 +83,7 @@ export const Sidebar = () => {
                         <AppLink
                             className={cls.appLink}
                             theme="secondary"
-                            href="https://t.me/rpellya"
+                            to="https://t.me/pellya"
                             target="_blank"
                         >
                             <TelegramIcon />
@@ -91,7 +91,7 @@ export const Sidebar = () => {
                         <AppLink
                             className={cls.appLink}
                             theme="secondary"
-                            href="https://www.youtube.com/@pellyait"
+                            to="https://www.youtube.com/@pellyait"
                             target="_blank"
                         >
                             <YoutubeIcon />
@@ -121,7 +121,7 @@ export const Sidebar = () => {
                         <span>Designed by</span>
                         <AppLink
                             className={cls.link}
-                            href="https://github.com/rpellya"
+                            to="https://github.com/rpellya"
                             target="_blank"
                         >
                             Pellya

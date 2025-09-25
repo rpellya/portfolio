@@ -8,6 +8,7 @@ interface Contact {
     label: string;
     value: string;
     icon: ReactNode;
+    link?: string;
 }
 export const contacts: Contact[] = [
     {
@@ -17,17 +18,20 @@ export const contacts: Contact[] = [
     },
     {
         label: 'Telegram',
-        value: '@pellya',
+        value: 'pellya',
         icon: <TelegramIcon />,
+        link: 'https://t.me/pellya',
     },
     {
         label: 'Github',
-        value: '@rpellya',
+        value: 'rpellya',
         icon: <GithubIcon />,
+        link: 'https://github.com/rpellya',
     },
     {
         label: 'YouTube',
         value: 'Pellya Roman',
         icon: <YoutubeIcon />,
+        link: 'https://www.youtube.com/@pellyait',
     },
 ];
