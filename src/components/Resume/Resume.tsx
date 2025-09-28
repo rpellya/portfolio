@@ -1,6 +1,7 @@
 import { classNames } from 'app/lib/classNames';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { ResumeItemCard } from './ResumeItemCard/ResumeItemCard';
+import { useTranslation } from 'react-i18next';
 import cls from './Resume.module.scss';
 
 interface ResumeProps {
@@ -8,69 +9,54 @@ interface ResumeProps {
 }
 
 export const Resume: React.FC<ResumeProps> = ({ className }) => {
-    const descriptionSumary =
-        'Frontend-разработчик с 2+ годами опыта. Специализируюсь на создании адаптивных и производительных веб-приложений. Постоянно изучаю современные инструменты и оптимизирую процессы.';
+    const { t } = useTranslation();
 
-    const descriptionEducationSPO =
-        ' 09.02.07. Программирование и информационные технологии';
+    const resumeLabels = Array.from({ length: 10 }, (_, i) =>
+        t(`resume.experience.labels.${i}`),
+    ).map((i) => i);
 
     return (
         <div className={classNames('', {}, [className])}>
-            <span>
-                Я стремлюсь занять позицию middle+, senior
-                frontend-разработчика. Всегда открыт для изучения новых
-                возможностей и применения своих навыков в разработке
-                программного обеспечения. Готов взять на себя ответственность за
-                сложные задачи и внести вклад в создание качественных продуктов.
-            </span>
+            <span>{t('resume.description')}</span>
             <p>
-                Вы можете скачать моё резюме
+                {t('resume.download.text')}
                 <AppLink theme="primary" className={cls.link}>
-                    здесь
+                    {t('resume.download.here')}
                 </AppLink>
             </p>
             <div className={cls.items}>
                 <ResumeItemCard
-                    title={'Sumary'}
-                    subTitle={'Pellya Roman'}
-                    description={descriptionSumary}
-                    labels={['St. Petersburg, Russia', 'rpellya@gmail.com']}
+                    title={t('resume.sumary.title')}
+                    subTitle={t('resume.sumary.subTitle')}
+                    description={t('resume.sumary.description')}
+                    labels={[t('resume.sumary.city'), 'rpellya@gmail.com']}
                 />
                 <ResumeItemCard
                     className={cls.experience}
-                    title={'Professional Experience'}
-                    subTitle={'Frontend Developer'}
-                    years="2023 - Present"
-                    geoPlace={'Datagile, Russia'}
-                    labels={[
-                        'Создание и поддержка административных панелей для управления крупными продуктами.',
-                        'Реализация сложной бизнес-логики с использованием React, Redux и RTK Query.',
-                        'Участие в полном цикле разработки: от проектирования архитектуры до тестирования и деплоя.',
-                        'Проведение код-ревью и менторинг junior-разработчиков.',
-                        'Внедрение лучших практик (code style, типизация, документация).',
-                        'Оптимизация процессов разработки: сокращение времени сборки на 40% через настройку Webpack и Vite.',
-                        'Доведение покрытия кода тестами до 80%+ для критически важных модулей.',
-                        '3 больших и тяжелых проекта на React.ts:',
-                        'Миграция на TypeScript, рефакторинг кода, создание своей UI-библиотеки для проекта.',
-                        'Настройка unit-тестов (Jest, React Testing Library) и скриншотного тестирования.',
-                    ]}
+                    title={t('resume.experience.title')}
+                    subTitle={t('resume.experience.subTitle')}
+                    years={t('resume.experience.years')}
+                    geoPlace={t('resume.experience.place')}
+                    labels={resumeLabels}
                 />
                 <ResumeItemCard
-                    title={'Education'}
+                    title={t('resume.education.title')}
                     items={[
                         {
-                            subTitle:
-                                'Санкт-Петербургский политехнический университет Петра Великого (СПбПУ)',
-                            years: '2024 - Present',
-                            geoPlace: 'St. Petersburg, Russia',
-                            description: '09.03.03. Прикладная инфорамтика',
+                            subTitle: t('resume.education.university.subTitle'),
+                            years: t('resume.education.university.years'),
+                            geoPlace: t('resume.education.university.place'),
+                            description: t(
+                                'resume.education.university.description',
+                            ),
                         },
                         {
-                            subTitle:
-                                'Институт среднего профессионального образования им. Петра Великого',
-                            years: '2020 - 2024',
-                            geoPlace: 'St. Petersburg, Russia',
-                            description: descriptionEducationSPO,
+                            subTitle: t('resume.education.college.subTitle'),
+                            years: t('resume.education.college.years'),
+                            geoPlace: t('resume.education.college.place'),
+                            description: t(
+                                'resume.education.college.description',
+                            ),
                         },
                     ]}
                 />
