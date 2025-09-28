@@ -12,24 +12,24 @@ interface Contact {
 }
 export const contacts: Contact[] = [
     {
-        label: 'Email',
+        label: 'contact.socials.email',
         value: 'rpellya@gmail.com',
         icon: <MailIcon />,
     },
     {
-        label: 'Telegram',
+        label: 'contact.socials.telegram',
         value: 'pellya',
         icon: <TelegramIcon />,
         link: 'https://t.me/pellya',
     },
     {
-        label: 'Github',
+        label: 'contact.socials.github',
         value: 'rpellya',
         icon: <GithubIcon />,
         link: 'https://github.com/rpellya',
     },
     {
-        label: 'YouTube',
+        label: 'contact.socials.youtube',
         value: 'Pellya Roman',
         icon: <YoutubeIcon />,
         link: 'https://www.youtube.com/@pellyait',

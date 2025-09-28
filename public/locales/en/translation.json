@@ -88,6 +88,13 @@
         }
     },
     "contact": {
-        "title": "Contact"
+        "title": "Contact",
+        "description": "You can contact me via various social networks or write to me directly at rpellya@gmail.com.",
+        "socials": {
+            "github": "GitHub",
+            "telegram": "Telegram",
+            "email": "Email",
+            "youtube": "YouTube"
+        }
     }
 }

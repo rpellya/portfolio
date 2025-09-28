@@ -88,6 +88,13 @@
         }
     },
     "contact": {
-        "title": "Контакты"
+        "title": "Контакты",
+        "description": "Вы можете связаться со мной через различные социальные сети или написать мне напрямую по адресу rpellya@gmail.com",
+        "socials": {
+            "github": "GitHub",
+            "telegram": "Телеграм",
+            "email": "Электронная почта",
+            "youtube": "YouTube"
+        }
     }
 }

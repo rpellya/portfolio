@@ -1,14 +1,13 @@
-import cls from './Contact.module.scss';
 import { ContactItemCard } from './ContactItemCard/ContactItemCard';
 import { contacts } from './mock/contacts';
+import { useTranslation } from 'react-i18next';
+import cls from './Contact.module.scss';
 
 export const Contact: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <>
-            <span>
-                Вы можете связаться со мной через различные социальные сети или
-                написать мне напрямую по адресу rpellya@gmail.com
-            </span>
+            <span>{t('contact.description')}</span>
             <div className={cls.card}>
                 <div className={cls.socials}>
                     {contacts.map((i) => (
