@@ -1,0 +1,49 @@
+{
+    "sidebar": {
+        "fullName": "Roman Pellya",
+        "designed": "Designed by",
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "resume": "Resume",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Roman Pellya",
+        "subTitle": "I am a"
+    },
+    "about": {
+        "title": "About",
+        "description": "My name is Roman Pella, I live in Russia and work as a front-end developer. My career has been characterised by continuous professional growth and the successful implementation of a number of projects. Some of my achievements are listed below.",
+        "header": "Frontend web developer",
+        "subHeader": "I am an experienced front-end developer with expertise in modern web technologies. I have a strong understanding of web development principles and best practices, and I strive to create high-quality, user-friendly web applications.",
+        "info": {
+            "birthday": {
+                "label": "Date of birth",
+                "value": "11th May"
+            },
+            "email": {
+                "label": "Email",
+                "value": "rpellya@gmail.com"
+            },
+            "city": {
+                "label": "City",
+                "value": "St. Petersburg, Russia"
+            },
+            "education": {
+                "label": "Education",
+                "value": "Applied Informatics, SPbPU"
+            }
+        }
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "I am involved in creating information systems in the field of information security. I have experience developing administrative panels for large products on React, as well as experience leading a development team and mentoring."
+    },
+    "resume": {
+        "title": "Resume"
+    },
+    "contact": {
+        "title": "Contact"
+    }
+}

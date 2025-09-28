@@ -8,9 +8,12 @@ import { SwitchBurger } from './SwitchBurger/SwitchBurger';
 import { useCallback, useEffect, useState } from 'react';
 import { classNames } from 'app/lib/classNames';
 import { useDebounce } from 'shared/hooks/useDebounse/useDebounse';
+import { useTranslation } from 'react-i18next';
 import cls from './Sidebar.module.scss';
 
 export const Sidebar = () => {
+    const { t } = useTranslation();
+
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
     const [closeSidebar, setCloseSidebar] = useState<boolean>(
         windowWidth <= 1200,
@@ -69,7 +72,7 @@ export const Sidebar = () => {
                             src="https://avatars.githubusercontent.com/u/103450915?v=4"
                         />
                     </div>
-                    <h2 className={cls.titleName}>Pellya Roman</h2>
+                    <h2 className={cls.titleName}>{t('sidebar.fullName')}</h2>
 
                     <div className={cls.socials}>
                         <AppLink
@@ -117,8 +120,8 @@ export const Sidebar = () => {
                         <span>© Copyright</span>
                         <span className={cls.name}>Pellya</span>
                     </div>
-                    <div>
-                        <span>Designed by</span>
+                    <div className={cls.designed}>
+                        <span>{t('sidebar.designed')}</span>
                         <AppLink
                             className={cls.link}
                             to="https://github.com/rpellya"
