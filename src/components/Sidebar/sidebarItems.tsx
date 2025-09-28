@@ -13,27 +13,27 @@ interface SidebarItems {
 
 export const sidevarItems: SidebarItems[] = [
     {
-        text: 'Home',
+        text: 'sidebar.home',
         icon: <HomeIcon />,
         link: 'home',
     },
     {
-        text: 'About',
+        text: 'sidebar.about',
         icon: <PersonIcon />,
         link: 'about',
     },
     {
-        text: 'Skills',
+        text: 'sidebar.skills',
         icon: <SkillsIcon />,
         link: 'skills',
     },
     {
-        text: 'Resume',
+        text: 'sidebar.resume',
         icon: <ResumeIcon />,
         link: 'resume',
     },
     {
-        text: 'Contact',
+        text: 'sidebar.contact',
         icon: <MailIcon />,
         link: 'contact',
     },

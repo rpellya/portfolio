@@ -1,0 +1,100 @@
+{
+    "sidebar": {
+        "fullName": "Roman Pellya",
+        "designed": "Designed by",
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "resume": "Resume",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Roman Pellya",
+        "subTitle": "I am a"
+    },
+    "about": {
+        "title": "About",
+        "description": "My name is Roman Pella, I live in Russia and work as a front-end developer. My career has been characterised by continuous professional growth and the successful implementation of a number of projects. Some of my achievements are listed below.",
+        "header": "Frontend web developer",
+        "subHeader": "I am an experienced front-end developer with expertise in modern web technologies. I have a strong understanding of web development principles and best practices, and I strive to create high-quality, user-friendly web applications.",
+        "info": {
+            "birthday": {
+                "label": "Date of birth",
+                "value": "11th May"
+            },
+            "email": {
+                "label": "Email",
+                "value": "rpellya@gmail.com"
+            },
+            "city": {
+                "label": "City",
+                "value": "St. Petersburg, Russia"
+            },
+            "education": {
+                "label": "Education",
+                "value": "Applied Informatics, SPbPU"
+            }
+        }
+    },
+    "skills": {
+        "title": "Skills",
+        "description": "I am involved in creating information systems in the field of information security. I have experience developing administrative panels for large products on React, as well as experience leading a development team and mentoring."
+    },
+    "resume": {
+        "title": "Resume",
+        "description": "I am seeking a position as a middle+ or senior front-end developer. I am always open to exploring new opportunities and applying my skills in software development. I am ready to take on complex tasks and contribute to the creation of high-quality products.",
+        "download": {
+            "text": "You can download my resume",
+            "here": "here"
+        },
+        "sumary": {
+            "title": "Sumary",
+            "subTitle": "Roman Pellya",
+            "description": "Frontend developer with 2+ years of experience. I specialise in creating responsive and high-performance web applications. I am constantly learning about modern tools and optimising processes.",
+            "city": "St. Petersburg, Russia"
+        },
+        "experience": {
+            "title": "Professional Experience",
+            "subTitle": "Frontend developer",
+            "years": "2023 - Present",
+            "place": "Datagile, Russia",
+            "labels": {
+                "0": "Participated in three large and challenging projects on React.ts",
+                "1": "Creating and maintaining administrative panels for managing large products.",
+                "2": "Implementation of complex business logic using React, Redux, and RTK Query.",
+                "3": "Participation in the full development cycle: from architecture design to testing and deployment.",
+                "4": "Conducting code reviews and mentoring junior developers.",
+                "5": "Implementation of best practices (code style, typing, documentation).",
+                "6": "Development process optimisation: 40% reduction in build time through Webpack and Vite configuration.",
+                "7": "Achieving 80%+ code coverage for critical modules.",
+                "8": "Migration to TypeScript, code refactoring, creation of a custom UI library for the project.",
+                "9": "Setting up unit tests (Jest, React Testing Library) and screenshot testing."
+            }
+        },
+        "education": {
+            "title": "Education",
+            "university": {
+                "subTitle": "Peter the Great St. Petersburg Polytechnic University (SPbPU)",
+                "years": "2024 - Present",
+                "place": "St. Petersburg, Russia",
+                "description": "09.03.03. Applied informatics"
+            },
+            "college": {
+                "subTitle": "Peter the Great Institute of Secondary Vocational Education",
+                "years": "2020 - 2024",
+                "place": "St. Petersburg, Russia",
+                "description": "09.02.07. Programming and information Technology"
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "You can contact me via various social networks or write to me directly at rpellya@gmail.com.",
+        "socials": {
+            "github": "GitHub",
+            "telegram": "Telegram",
+            "email": "Email",
+            "youtube": "YouTube"
+        }
+    }
+}

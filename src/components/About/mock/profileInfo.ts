@@ -5,15 +5,19 @@ interface ProfileInfo {
 
 export const profileInfo: ProfileInfo[] = [
     {
-        label: 'Birthday',
-        value: '11th May',
+        label: 'about.info.birthday.label',
+        value: 'about.info.birthday.value',
     },
     {
-        label: 'Email',
-        value: 'rpellya@gmail.com',
+        label: 'about.info.email.label',
+        value: 'about.info.email.value',
     },
     {
-        label: 'City',
-        value: 'St. Petersburg, Russia',
+        label: 'about.info.city.label',
+        value: 'about.info.city.value',
+    },
+    {
+        label: 'about.info.education.label',
+        value: 'about.info.education.value',
     },
 ];

@@ -33,8 +33,8 @@ export const ResumeItemCard: React.FC<ResumeItemCardProps> = ({
             {items ? (
                 <>
                     <h3 className={cls.title}>{title}</h3>
-                    {items.map((item) => (
-                        <div className={cls.itemCardContainer}>
+                    {items.map((item, index) => (
+                        <div className={cls.itemCardContainer} key={index}>
                             <h4 className={cls.subTitle}>{item.subTitle}</h4>
                             {item.years && (
                                 <span className={cls.years}>{item.years}</span>
