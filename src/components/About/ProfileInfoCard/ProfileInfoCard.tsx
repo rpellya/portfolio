@@ -18,7 +18,7 @@ export const ProfileInfoCard: React.FC<ProfileInfoCardProps> = ({
 
     return (
         <div className={classNames(cls.ProfileInfoCard, {}, [className])}>
-            <ArrowIcon />
+            <ArrowIcon className={cls.icon} />
             <div className={cls.textContainer}>
                 <strong className={cls.label}>{t(label)}:</strong>
                 <span>{t(value)}</span>

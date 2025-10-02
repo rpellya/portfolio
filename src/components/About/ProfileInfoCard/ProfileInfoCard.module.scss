@@ -9,3 +9,19 @@
         column-gap: 10px;
     }
 }
+
+@media (max-width: 300px) {
+    .icon {
+        display: none;
+    }
+
+    .ProfileInfoCard {
+        align-items: flex-start;
+
+        .textContainer {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 10px;
+        }
+    }
+}
