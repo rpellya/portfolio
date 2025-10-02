@@ -12,7 +12,7 @@ export const About: React.FC<AboutProps> = ({ className }) => {
     const { t } = useTranslation();
 
     return (
-        <div className={classNames(cls.About, {}, [className])} id="About">
+        <div className={classNames(cls.About, {}, [className])}>
             <p className={cls.description}>{t('about.description')}</p>
             <div className={cls.infoContainer}>
                 <img

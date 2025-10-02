@@ -38,11 +38,13 @@
     },
     "skills": {
         "title": "Skills",
-        "description": "I am involved in creating information systems in the field of information security. I have experience developing administrative panels for large products on React, as well as experience leading a development team and mentoring."
+        "subtitle": "Basic:",
+        "description": "I am involved in creating information systems in the field of information security. I have experience developing administrative panels for large products on React, as well as experience leading a development team and mentoring.",
+        "addSkills": "Additional:"
     },
     "resume": {
         "title": "Resume",
-        "description": "I am seeking a position as a middle+ or senior front-end developer. I am always open to exploring new opportunities and applying my skills in software development. I am ready to take on complex tasks and contribute to the creation of high-quality products.",
+        "description": "I am seeking a position as a middle+ or senior front-end developer. I am always open to new opportunities and am ready to improve my skills and put them into practice. I am prepared to take on responsibility for complex tasks and contribute to the creation of high-quality products.",
         "download": {
             "text": "You can download my resume",
             "here": "here"
@@ -50,7 +52,7 @@
         "sumary": {
             "title": "Sumary",
             "subTitle": "Roman Pellya",
-            "description": "Frontend developer with 2+ years of experience. I specialise in creating responsive and high-performance web applications. I am constantly learning about modern tools and optimising processes.",
+            "description": "I easily establish contact and build productive relationships with colleagues and partners. I analyse problems in depth and find solutions even when resources or deadlines are limited. I meet deadlines precisely thanks to detailed planning and prioritisation of tasks, and I complete them responsibly. I see complex projects as a challenge for professional growth! I constantly study modern tools and optimise processes.",
             "city": "St. Petersburg, Russia"
         },
         "experience": {
@@ -58,17 +60,20 @@
             "subTitle": "Frontend developer",
             "years": "2023 - Present",
             "place": "Datagile, Russia",
+            "description": "Development of SPA applications for administrative panels in the field of information security. Technologies: React.js, JS, TS, HTML, Styles Components, SCSS, Redux Toolkit, Webpack, Vite, Ant design, Jest, React Testing Library, StoryBook, Git.",
             "labels": {
-                "0": "Participated in three large and challenging projects on React.ts",
-                "1": "Creating and maintaining administrative panels for managing large products.",
-                "2": "Implementation of complex business logic using React, Redux, and RTK Query.",
-                "3": "Participation in the full development cycle: from architecture design to testing and deployment.",
-                "4": "Conducting code reviews and mentoring junior developers.",
-                "5": "Implementation of best practices (code style, typing, documentation).",
-                "6": "Development process optimisation: 40% reduction in build time through Webpack and Vite configuration.",
-                "7": "Achieving 80%+ code coverage for critical modules.",
-                "8": "Migration to TypeScript, code refactoring, creation of a custom UI library for the project.",
-                "9": "Setting up unit tests (Jest, React Testing Library) and screenshot testing."
+                "0": "Creating and maintaining high-load administrative panels for managing large products from scratch.",
+                "1": "Configuring Webpack and Vite build tools, testing environments, ESLint, StyleLint, and Prettier linters.",
+                "2": "Designing business logic and application architecture.",
+                "3": "Implementation of business logic using RTK Query.",
+                "4": "Development of various modules and components: a separate UI library for each project, user registration and authorisation using JWT tokens, employee identification.",
+                "5": "Project optimisation. During refactoring, I used lazy loading of components and translations, which increased the application's speed by 30% and reduced build time by 40% through assembler configuration.",
+                "6": "Building large SVG graphics and updating them every second without memory leakage.",
+                "7": "Conducting code reviews and mentoring junior developers.",
+                "8": "Implementation of best practices (code style, typing, documentation of field requirements).",
+                "9": "Achieving 80% code coverage for critical modules.",
+                "10": "Setting up unit tests (Jest, React Testing Library) and StoryBook for UI libraries.",
+                "11": "Participated in 3 large and challenging projects on React.ts."
             }
         },
         "education": {
@@ -78,6 +83,18 @@
                 "years": "2024 - Present",
                 "place": "St. Petersburg, Russia",
                 "description": "09.03.03. Applied informatics"
+            },
+            "yandexPracticum": {
+                "subTitle": "Middle Front-End Developer Course",
+                "years": "2025",
+                "place": "Yandex Practicum, Online",
+                "description": "Further education for professional development"
+            },
+            "ulbi": {
+                "subTitle": "Advanced Frontend. In production on React",
+                "years": "2024",
+                "place": "ulbitv, Online",
+                "description": "Further education for professional development"
             },
             "college": {
                 "subTitle": "Peter the Great Institute of Secondary Vocational Education",
