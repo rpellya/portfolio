@@ -11,7 +11,7 @@ interface ResumeProps {
 export const Resume: React.FC<ResumeProps> = ({ className }) => {
     const { t } = useTranslation();
 
-    const resumeLabels = Array.from({ length: 10 }, (_, i) =>
+    const resumeLabels = Array.from({ length: 12 }, (_, i) =>
         t(`resume.experience.labels.${i}`),
     ).map((i) => i);
 
@@ -37,6 +37,7 @@ export const Resume: React.FC<ResumeProps> = ({ className }) => {
                     subTitle={t('resume.experience.subTitle')}
                     years={t('resume.experience.years')}
                     geoPlace={t('resume.experience.place')}
+                    description={t('resume.experience.description')}
                     labels={resumeLabels}
                 />
                 <ResumeItemCard
@@ -49,6 +50,24 @@ export const Resume: React.FC<ResumeProps> = ({ className }) => {
                             description: t(
                                 'resume.education.university.description',
                             ),
+                        },
+                        {
+                            subTitle: t(
+                                'resume.education.yandexPracticum.subTitle',
+                            ),
+                            years: t('resume.education.yandexPracticum.years'),
+                            geoPlace: t(
+                                'resume.education.yandexPracticum.place',
+                            ),
+                            description: t(
+                                'resume.education.yandexPracticum.description',
+                            ),
+                        },
+                        {
+                            subTitle: t('resume.education.ulbi.subTitle'),
+                            years: t('resume.education.ulbi.years'),
+                            geoPlace: t('resume.education.ulbi.place'),
+                            description: t('resume.education.ulbi.description'),
                         },
                         {
                             subTitle: t('resume.education.college.subTitle'),

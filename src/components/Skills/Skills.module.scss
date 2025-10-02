@@ -1,3 +1,19 @@
+.subtitle {
+    color: var(--accent-color);
+    margin: 8px 0;
+}
+
+.addSkillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0px;
+}
+
+.addSkillsTitle {
+    color: var(--accent-color);
+    margin: 8px 0;
+}
+
 .skillsContainer {
     display: flex;
     flex-wrap: wrap;
